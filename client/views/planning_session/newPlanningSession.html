@@ -1,0 +1,14 @@
+<template name="planningSession">
+
+  {{#each stories}}
+    {{> story }}
+  {{/each}}
+
+  <form>
+    <div class="form-group">
+      {{text_field 'text'}} 
+    </div>
+    {{submit_button 'Add Story'}}
+  </form>
+
+</template>

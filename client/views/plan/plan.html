@@ -1,0 +1,9 @@
+<template name="plan">
+  {{#each stories}}
+    {{> story}}
+  {{/each}}
+
+  {{#with activeStory}}
+    <h2>{{text}}</h2>
+  {{/with}}
+</template>
